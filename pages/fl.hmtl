@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Facility Location problems - Markus Sinnl</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="/">
+
+        <meta name="author" content="Markus Sinnl" />
+        <meta name="description" content="This site contains accompanying material to the paper Thinning out facilities: a Benders decomposition approach for the uncapacitated facility location problem with separable convex costs by Matteo Fischetti, Ivana Ljubic and Markus Sinnl. A technical report version of this paper can be downloaded by klicking here Instances UFL instances Can ..." />
+
+    <meta property="og:site_name" content="Markus Sinnl" />
+    <meta property="og:type" content="article"/>
+    <meta property="og:title" content="Facility Location problems"/>
+    <meta property="og:url" content="/"/>
+    <meta property="og:description" content="This site contains accompanying material to the paper Thinning out facilities: a Benders decomposition approach for the uncapacitated facility location problem with separable convex costs by Matteo Fischetti, Ivana Ljubic and Markus Sinnl. A technical report version of this paper can be downloaded by klicking here Instances UFL instances Can ..." />
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+
+
+
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+Markus Sinnl            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                    <li><a href="/">About</a></li>
+                    <li><a href="/pages/publications.html">Publications</a></li>
+                    <li><a href="/pages/instancescodes.html">Instances/Codes</a></li>
+                    <li><a href="/pages/activities.html">Activities</a></li>
+                    <li><a href="/pages/talks.html">Talks</a></li>
+                    <li><a href="/pages/teaching.html">Teaching</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content" class="body">
+        <h1 class="entry-title">Facility Location problems</h1>
+        
+        <div class="entry-content">
+            <p>This site contains accompanying material to the paper</p>
+<blockquote>
+<p><em>Thinning out facilities: a Benders decomposition approach for the uncapacitated facility location problem with separable convex costs</em></p>
+</blockquote>
+<p>by Matteo Fischetti, Ivana Ljubic and Markus Sinnl. A technical report version of this paper can be downloaded by klicking <a href="../pdfs/thinning_out_facilities.pdf">here</a></p>
+<h2>Instances</h2>
+<h3>UFL instances</h3>
+<p>Can be found in the <a href="http://resources.mpi-inf.mpg.de/departments/d1/projects/benchmarks/UflLib/">UflLib</a>. Note that some of them have also been used for qUFL.</p>
+<h3>qUFL instances used in Table 3 of above publication</h3>
+<ul>
+<li><a href="http://homepage.univie.ac.at/markus.sinnl/wp-content/uploads/2015/05/qUFL.zip">ORLIB-format</a> (see <a href="http://resources.mpi-inf.mpg.de/departments/d1/projects/benchmarks/UflLib/data-format.html">here</a> for a format description)</li>
+<li><a href="http://homepage.univie.ac.at/markus.sinnl/wp-content/uploads/2015/05/qUFL10-80-lp.zip">LP-files of perspective reformulation-10 to 80 facilities</a></li>
+<li><a href="http://homepage.univie.ac.at/markus.sinnl/wp-content/uploads/2015/05/qUFL100-250-lp.zip">LP-files of perspective reformulation-100 to 250 facilities</a></li>
+</ul>
+<h2>Solutions</h2>
+        </div>
+    </section>
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+
+<section class="well well-sm">
+    <ul class="list-group list-group-flush">
+            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+              <ul class="list-group" id="social">
+                <li class="list-group-item"><a href="https://twitter.com/msinnl"><i class="fa fa-twitter-square fa-lg"></i> twitter</a></li>
+                <li class="list-group-item"><a href="http://github.com/msinnl"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+                <li class="list-group-item"><a href="https://scholar.google.at/citations?user=aaw54NIAAAAJ&hl=de&oi=ao"><i class="fa fa-fa-google-square fa-lg"></i> google scholar</a></li>
+                <li class="list-group-item"><a href="http://orcid.org/0000-0003-1439-8702"><i class="fa fa-orcid-square fa-lg"></i> ORCID</a></li>
+                <li class="list-group-item"><a href="https://www.researchgate.net/profile/Markus_Sinnl"><i class="fa fa-researchgate-square fa-lg"></i> researchgate</a></li>
+              </ul>
+            </li>
+
+
+
+
+
+    </ul>
+</section>
+            </aside>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy;  Markus Sinnl
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+
+</body>
+</html>
