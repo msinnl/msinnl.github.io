@@ -12,13 +12,13 @@
 <link rel="canonical" href="/">
 
         <meta name="author" content="Markus Sinnl" />
-        <meta name="description" content="This site contains accompanying material to the papers Intersection Cuts for Bilevel Optimization A new general-purpose algorithm for mixed-integer bilevel linear programs Interdiction Games and Monotonicity A dynamic reformulation heuristic for Generalized Interdiction Problems by Matteo Fischetti, Ivana Ljubic, Michele Monaci and Markus Sinnl. Solver for Mixed-Integer Bilevel Linear Problems ..." />
+        <meta name="description" content="This site contains accompanying material to the papers Intersection Cuts for Bilevel Optimization A new general-purpose algorithm for mixed-integer bilevel linear programs Interdiction Games and Monotonicity A dynamic reformulation heuristic for Generalized Interdiction Problems by Matteo Fischetti, Ivana Ljubic, Michele Monaci and Markus Sinnl. Solver for Mixed-Integer Bilevel Linear Problems …" />
 
     <meta property="og:site_name" content="Markus Sinnl" />
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="Bilevel Integer Programming and Interdiction Problems"/>
     <meta property="og:url" content="/"/>
-    <meta property="og:description" content="This site contains accompanying material to the papers Intersection Cuts for Bilevel Optimization A new general-purpose algorithm for mixed-integer bilevel linear programs Interdiction Games and Monotonicity A dynamic reformulation heuristic for Generalized Interdiction Problems by Matteo Fischetti, Ivana Ljubic, Michele Monaci and Markus Sinnl. Solver for Mixed-Integer Bilevel Linear Problems ..." />
+    <meta property="og:description" content="This site contains accompanying material to the papers Intersection Cuts for Bilevel Optimization A new general-purpose algorithm for mixed-integer bilevel linear programs Interdiction Games and Monotonicity A dynamic reformulation heuristic for Generalized Interdiction Problems by Matteo Fischetti, Ivana Ljubic, Michele Monaci and Markus Sinnl. Solver for Mixed-Integer Bilevel Linear Problems …" />
 
 
     <!-- Bootstrap -->
@@ -74,10 +74,10 @@ Markus Sinnl            </a>
             <p>This site contains accompanying material to the papers</p>
 <blockquote>
 <ul>
-<li><a href="../.">Intersection Cuts for Bilevel Optimization</a>  </li>
+<li><a href="../pdfs/IPCO_techreport.pdf">Intersection Cuts for Bilevel Optimization</a>  </li>
 <li><a href="../pdfs/secondbilevel-techreport.pdf">A new general-purpose algorithm for mixed-integer bilevel linear programs</a>  </li>
 <li><a href="../pdfs/independentSystems-techreport.pdf">Interdiction Games and Monotonicity</a>  </li>
-<li><a href="../pdfs/biheur-techreport.pdf">A dynamic reformulation heuristic for Generalized Interdiction Problems</a></li>
+<li><a href="../pdfs/biheur-techreport.pdf">A dynamic reformulation heuristic for Generalized Interdiction Problems</a>  </li>
 </ul>
 </blockquote>
 <p>by Matteo Fischetti, Ivana Ljubic, Michele Monaci and Markus Sinnl.</p>
@@ -87,7 +87,7 @@ Markus Sinnl            </a>
 To use the solver, a <strong>license file</strong> must be requested from the authors, request it by <a href="mailto:markus.sinnl@univie.ac.at?subject=[BILEVEL]%20License%20Key%20Request&amp;cc=m.fischetti@gmail.com,ivana.ljubic@essec.edu,michele.monaci@unibo.it">clicking here</a></p>
 <p>The solver is provided as binary compiled under Ubuntu 14.04 64bit with g++ 4.8.4 using CPLEX 12.7. 
 It needs dynamic CPLEX libraries, which need to be generated manually by the user. 
-The procedure is as following:</p>
+The procedure is as follows:</p>
 <ol>
 <li>In the script <em>make_cplex_dynamic.sh</em> provided with the binary set the environment variable CPLEX_DIR to the base directory of the CPLEX installation on your system (e.g., /opt/ibm/ILOG/CPLEX_Studio127). </li>
 <li>Run the resulting script <em>make_cplex_dynamic.sh</em> to create the dynamic CPLEX library files libconcert.so, libcplex.so and libilocplex.so. </li>
@@ -102,7 +102,7 @@ and all other available parameters can be shown by</p>
 <blockquote>
 <p>./bilevel -help</p>
 </blockquote>
-<p>For the instance format, see below. The software is for academic purposes only, see also the license-file in the provided zipfile.</p>
+<p>For the instance format, see below (or the file readme.md in the provided zipfile). The software is for academic purposes only, see also the file license.md in the provided zipfile.</p>
 <h2>Instances</h2>
 <ul>
 <li>Click <a href="http://homepage.univie.ac.at/markus.sinnl/wp-content/uploads/2015/11/data_for_MPB_paper.zip">here</a> to download the instances based on MIPlib instances </li>
