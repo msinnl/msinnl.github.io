@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Facility Location problems - Markus Sinnl</title>
+    <title>Facility Location Problems - Markus Sinnl</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -12,13 +12,13 @@
 <link rel="canonical" href="/">
 
         <meta name="author" content="Markus Sinnl" />
-        <meta name="description" content="This site contains accompanying material to the paper Thinning out facilities: a Benders decomposition approach for the uncapacitated facility location problem with separable convex costs by Matteo Fischetti, Ivana Ljubic and Markus Sinnl. A technical report version of this paper can be downloaded by klicking here Instances UFL instances Can …" />
+        <meta name="description" content="This site contains accompanying material to the papers Benders decomposition without separability: A computational study for capacitated facility location problems Redesigning Benders Decomposition for Large Scale Facility Location by Matteo Fischetti, Ivana Ljubic and Markus Sinnl. Instances UFL instances Can be found in the UflLib. Note that some of them ..." />
 
     <meta property="og:site_name" content="Markus Sinnl" />
     <meta property="og:type" content="article"/>
-    <meta property="og:title" content="Facility Location problems"/>
+    <meta property="og:title" content="Facility Location Problems"/>
     <meta property="og:url" content="/"/>
-    <meta property="og:description" content="This site contains accompanying material to the paper Thinning out facilities: a Benders decomposition approach for the uncapacitated facility location problem with separable convex costs by Matteo Fischetti, Ivana Ljubic and Markus Sinnl. A technical report version of this paper can be downloaded by klicking here Instances UFL instances Can …" />
+    <meta property="og:description" content="This site contains accompanying material to the papers Benders decomposition without separability: A computational study for capacitated facility location problems Redesigning Benders Decomposition for Large Scale Facility Location by Matteo Fischetti, Ivana Ljubic and Markus Sinnl. Instances UFL instances Can be found in the UflLib. Note that some of them ..." />
 
 
     <!-- Bootstrap -->
@@ -68,24 +68,31 @@ Markus Sinnl            </a>
     <div class="row">
         <div class="col-sm-9">
     <section id="content" class="body">
-        <h1 class="entry-title">Facility Location problems</h1>
+        <h1 class="entry-title">Facility Location Problems</h1>
         
         <div class="entry-content">
-            <p>This site contains accompanying material to the paper</p>
+            <p>This site contains accompanying material to the papers</p>
 <blockquote>
-<p><em>Thinning out facilities: a Benders decomposition approach for the uncapacitated facility location problem with separable convex costs</em></p>
+<p><a href="../pdfs/cfl-techreport.pdf"><em>Benders decomposition without separability: A computational study for capacitated facility location problems</em></a><br />
+<a href="../pdfs/thinning_out_facilities.pdf"><em>Redesigning Benders Decomposition for Large Scale Facility Location</em> </a></p>
 </blockquote>
-<p>by Matteo Fischetti, Ivana Ljubic and Markus Sinnl. A technical report version of this paper can be downloaded by klicking <a href="../pdfs/thinning_out_facilities.pdf">here</a></p>
+<p>by Matteo Fischetti, Ivana Ljubic and Markus Sinnl.</p>
 <h2>Instances</h2>
 <h3>UFL instances</h3>
 <p>Can be found in the <a href="http://resources.mpi-inf.mpg.de/departments/d1/projects/benchmarks/UflLib/">UflLib</a>. Note that some of them have also been used for qUFL.</p>
-<h3>qUFL instances used in Table 3 of above publication</h3>
+<h3>qUFL instances</h3>
 <ul>
 <li><a href="http://homepage.univie.ac.at/markus.sinnl/wp-content/uploads/2015/05/qUFL.zip">ORLIB-format</a> (see <a href="http://resources.mpi-inf.mpg.de/departments/d1/projects/benchmarks/UflLib/data-format.html">here</a> for a format description)</li>
 <li><a href="http://homepage.univie.ac.at/markus.sinnl/wp-content/uploads/2015/05/qUFL10-80-lp.zip">LP-files of perspective reformulation-10 to 80 facilities</a></li>
 <li><a href="http://homepage.univie.ac.at/markus.sinnl/wp-content/uploads/2015/05/qUFL100-250-lp.zip">LP-files of perspective reformulation-100 to 250 facilities</a></li>
 </ul>
 <h2>Solutions</h2>
+<h3>UFL</h3>
+<p>Solutions are in the UflLlib format, i.e., for every customer, the facility it is allocated to is given, and in the end, the solution value is given.</p>
+<ul>
+<li><a href="https://drive.google.com/open?id=0B1mYs4TT6IFMS2JqSG40UVFUcFk">Heuristic Results for KG-instances g*500/750 (Local Branching Table from the "Redesigning Benders"-paper)</a>
+<em>Note</em>: Includes also local branching results for the 10 g*500/750 instances, where the optimal solution is known; moreover, for three instances, improved heuristic solutions compared to the ones in the paper are included (obtained a with more aggressive local branching setting).</li>
+</ul>
         </div>
     </section>
         </div>
