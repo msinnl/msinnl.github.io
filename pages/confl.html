@@ -12,13 +12,13 @@
 <link rel="canonical" href="/">
 
         <meta name="author" content="Markus Sinnl" />
-        <meta name="description" content="This site contains accompanying material to the paper An Algorithmic Framework for the Exact Solution of Tree-Star Problems by Markus Leitner, Ivana Ljubic, Juan-Jose Salazar-Gonzalez and Markus Sinnl. Instances To download the instances, click here" />
+        <meta name="description" content="This site contains accompanying material to the paper An Algorithmic Framework for the Exact Solution of Tree-Star Problems by Markus Leitner, Ivana Ljubic, Juan-Jose Salazar-Gonzalez and Markus Sinnl. Instances To download the instances, click here. For newSet, only the instance generator is provided, as the filesize of these instances exceeds ..." />
 
     <meta property="og:site_name" content="Markus Sinnl" />
     <meta property="og:type" content="article"/>
     <meta property="og:title" content="The Connected Facility Location problem"/>
     <meta property="og:url" content="/"/>
-    <meta property="og:description" content="This site contains accompanying material to the paper An Algorithmic Framework for the Exact Solution of Tree-Star Problems by Markus Leitner, Ivana Ljubic, Juan-Jose Salazar-Gonzalez and Markus Sinnl. Instances To download the instances, click here" />
+    <meta property="og:description" content="This site contains accompanying material to the paper An Algorithmic Framework for the Exact Solution of Tree-Star Problems by Markus Leitner, Ivana Ljubic, Juan-Jose Salazar-Gonzalez and Markus Sinnl. Instances To download the instances, click here. For newSet, only the instance generator is provided, as the filesize of these instances exceeds ..." />
 
 
     <!-- Bootstrap -->
@@ -77,7 +77,15 @@ Markus Sinnl            </a>
 </blockquote>
 <p>by Markus Leitner, Ivana Ljubic, Juan-Jose Salazar-Gonzalez and Markus Sinnl.</p>
 <h2>Instances</h2>
-<p>To download the instances, click <a href="">here</a></p>
+<p>To download the instances, click <a href="https://drive.google.com/drive/folders/0B1mYs4TT6IFMbkRiaFIyTENHYUE">here</a>.<br />
+For newSet, only the instance generator is provided, as the filesize of these instances exceeds one gigabyte.  </p>
+<p>The file-format is as follows:<br />
+The first line (starting with <em>c</em>) is a comment line.<br />
+The next line (starting with <em>p</em>) first contains an (unused) string, followed by <em>nCoreNodes</em> <em>nCustomers</em> <em>nTotalEdges</em><br />
+Next (starting with <em>e</em>) are the edges, with <em>nodeID1</em> <em>nodeID2</em> <em>cost</em><br />
+Next (stating with <em>f</em>) are the core nodes, with <em>nodeID</em> <em>openingCost</em><br />
+The nodeIDs for core nodes are from 0 to <em>nCoreNodes</em>, the remaining nodes are the customers.<br />
+The file is terminated by the string "s 0" in the last line.  </p>
         </div>
     </section>
         </div>
