@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
 <head>
-    <title>Instances, Codes, etc - Markus Sinnl</title>
+    <title>The p-center problem - Markus Sinnl</title>
     <!-- Using the latest rendering mode for IE -->
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta charset="utf-8">
@@ -12,13 +12,13 @@
 <link rel="canonical" href="/">
 
         <meta name="author" content="Markus Sinnl" />
-        <meta name="description" content="This pages is an overview page, which links to various program codes (source and/or binaries), instances and results related to publications, where I have been involved. Steiner tree problem with revenues, budget and hop-constraints Facility Location Problems Steiner tree problem, AKA the StayNerd/Mozartballs code from the 11th DIMACS …" />
+        <meta name="description" content="This site contains accompanying material to the paper A scaleable projection‐based branch‐and‐cut algorithm for the p‐center problem by E.Gaar and M. Sinnl. The solver can be downloaded by clicking here. The software is for academic purposes only, see also license.md. To use the solver …" />
 
     <meta property="og:site_name" content="Markus Sinnl" />
     <meta property="og:type" content="article"/>
-    <meta property="og:title" content="Instances, Codes, etc"/>
+    <meta property="og:title" content="The p-center problem"/>
     <meta property="og:url" content="/"/>
-    <meta property="og:description" content="This pages is an overview page, which links to various program codes (source and/or binaries), instances and results related to publications, where I have been involved. Steiner tree problem with revenues, budget and hop-constraints Facility Location Problems Steiner tree problem, AKA the StayNerd/Mozartballs code from the 11th DIMACS …" />
+    <meta property="og:description" content="This site contains accompanying material to the paper A scaleable projection‐based branch‐and‐cut algorithm for the p‐center problem by E.Gaar and M. Sinnl. The solver can be downloaded by clicking here. The software is for academic purposes only, see also license.md. To use the solver …" />
 
 
     <!-- Bootstrap -->
@@ -66,28 +66,39 @@ Markus Sinnl            </a>
     <div class="row">
         <div class="col-sm-9">
     <section id="content" class="body">
-        <h1 class="entry-title">Instances, Codes, etc</h1>
+        <h1 class="entry-title">The p-center problem</h1>
         
         <div class="entry-content">
-            <p>This pages is an overview page, which links to various program codes (source and/or binaries), instances and results related to publications, where I have been involved.</p>
+            <p>This site contains accompanying material to the paper</p>
+<blockquote>
 <ul>
-<li><a href="../pages/stprbh.html">Steiner tree problem with revenues, budget and hop-constraints</a> </li>
-<li><a href="../pages/fl.html">Facility Location Problems</a> </li>
-<li><a href="http://homepage.univie.ac.at/ivana.ljubic/research/staynerd/StayNerd.html">Steiner tree problem, AKA the StayNerd/Mozartballs code from the 11th DIMACS challenge</a></li>
-<li><a href="../pages/bilevel.html">Bilevel Integer Programming and Interdiction Problems</a></li>
-<li><a href="../pages/confl.html">Connected Facility Location Problem</a></li>
-<li><a href="https://github.com/mluipersbeck/dapcstp">Dual Ascent-based Solution Framework for the Prize-Collecting Steiner Tree Problem and Related Problems</a></li>
-<li><a href="../pages/gcop.html">Generalized Clustered Orienteering Problem</a></li>
-<li><a href="../pages/rcmwcs.html">Relax-and-Cut for Maximum Weight Connected Subgraph Problems</a></li>
-<li><a href="../pages/sstp.html">Stochastic Steiner tree problem</a></li>
-<li><a href="../pages/domtree.html">Minimum Cost Dominating Tree Problem</a></li>
-<li><a href="../pages/umst.html">Upgrading Spanning Tree Problem</a></li>
-<li><a href="../pages/tspan.html">Tree t-spanner Problem</a></li>
-<li><a href="../pages/slabel.html">S-Labeling Problem</a></li>
-<li><a href="../pages/tcmcrp.html">Time-Constrained Maximal Covering Routing Problem</a></li>
-<li><a href="../pages/wtdp.html">Weighted Total Domination Problem</a></li>
-<li><a href="../pages/submodularinterdiction.html">Submodular Interdiction Problem</a></li>
-<li><a href="../pages/pcenter.html">P-Center Problem</a></li>
+<li><a href="https://www.sciencedirect.com/science/article/pii/S0377221722001187">A scaleable projection‐based branch‐and‐cut algorithm for the p‐center problem</a></li>
+</ul>
+</blockquote>
+<p>by E.Gaar and M. Sinnl.</p>
+<p>The solver can be downloaded by <a href="https://drive.google.com/drive/folders/1vjPlWqPFUMAdweBOn0LOBJ1GediuRc25?usp=share_link">clicking here</a>. The software is for academic purposes only, see also license.md. To use the solver, a <strong>license file</strong> must be requested from the authors, request it by <a href="mailto:markus.sinnl@jku.at?subject=[PCENTER]%20License%20Key%20Request&amp;cc=elisabeth.gaar@jku.at">mail</a>. The solver can handle two instances-formats corresponding to standard benchmark instance sets from literature, namely <em>TSPlib</em> and <em>pmedian</em>. For <em>TSPlib</em> instances the distances are rounded to the next integer as described in the paper following previous literature.</p>
+<p>The solver is provided as binary called <em>pcenter</em> compiled under Ubuntu 20.04 64bit with g++ 9.4.0 using CPLEX 12.10 (other versions of CPLEX may also work). The solver needs the Boost <a href="https://www.boost.org/">2</a> libraries <em>system</em>, <em>filesystem</em> and <em>program_options</em>. A standard installation of Boost should work. It also needs dynamic CPLEX libraries, which need to be generated manually by the user. The procedure is as following:</p>
+<ol>
+<li>In the script <em>make_cplex_dynamic.sh</em> provided with the binary set the variable <em>CPLEX_DIR</em> to the base directory of the CPLEX installation on your system (e.g., /opt/ibm/ILOG/CPLEX_Studio1210).</li>
+<li>Run the resulting script <em>make_cplex_dynamic.sh</em> to create the dynamic CPLEX library files libconcert.so, libcplex.so and libilocplex.so.</li>
+<li>Put the generated dynamic libraries and the requested license <em>pcenter.license</em> in the folder where the binary <em>pcenter</em> is.</li>
+</ol>
+<h2>Running the Solver</h2>
+<p>The solver can be run as, e.g.,</p>
+<blockquote>
+<p>./pcenter -f <em>INSTANCENAME</em> --p <em>NUMBER</em> --instanceformat <em>NUMBER</em> -t <em>NUMBER</em> -m <em>NUMBER</em></p>
+</blockquote>
+<p>These settings and parameters can also be shown by</p>
+<blockquote>
+<p>./pcenter --help</p>
+</blockquote>
+<h3>Parameter explanation</h3>
+<ul>
+<li>-f instance to be solved</li>
+<li>--p the cardinality constraint</li>
+<li>--instanceformat: 1 (TSPlib-instances), 2 (Pmedian-instances)</li>
+<li>-t timelimit in seconds</li>
+<li>-m memorylimit in MB</li>
 </ul>
         </div>
     </section>
